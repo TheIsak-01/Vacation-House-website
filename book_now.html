@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      body {
+        font-family: Aria, sans-serif;
+        margin: 40px;
+        background: #d4a017;
+        color: #3b2a1f;
+      }
+
+      .container {
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 24px;
+        background: #00000000;
+        border-radius: 12px;
+        box-shadow: 0 14px 32px rgba(34, 2, 86, 0.945) 8;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+
+      input,
+      button {
+        width: 100%;
+        padding: 10px 12px;
+        margin-top: 6px;
+        border: 1px solid #d1d7df;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      button {
+        margin-top: 18px;
+        background: #f7f4ee;
+        color: #0b1f33;
+        border: none;
+        cursor: pointer;
+      }
+      select {
+        width: 100%;
+        padding: 10px 12px;
+        margin-top: 6px;
+        border: 1px solid #2b2b2b;
+        border-radius: 8px;
+        font-size: 1rem;
+      }
+
+      button:hover {
+        background: #b8860b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book now</h1>
+      <form>
+        <label for="name">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Enter your name(John Doe)"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email(example@gmail.com)"
+          required
+        />
+        <label for="phone">Phone Number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="Enter your phone number(+234 123 456 7890)"
+          required
+        />
+        <label for="house">Select Accommodation</label>
+        <select id="house" name="house" required>
+          <option value="" disabled selected>Choose a house</option>
+          <option value="Alpha Villa">Alpha Villa</option>
+          <option value="Delta Residence">Delta Residence</option>
+          <option value="Sparrow Villa">Sparrow Villa</option>
+        </select>
+        <label for="check-in-date">Check-in Date</label>
+        <input id="check-in-date" name="check-in-date" type="date" required />
+        <label for="check-out-date">Check-out Date</label>
+        <input id="check-out-date" name="check-out-date" type="date" required />
+        <label for="Payment-methods">Payment Method</label>
+        <select id="Payment-methods" name="Payment methods" required>
+          <option value="" disabled selected>Select a payment method</option>
+          <option value="Pay online">Pay Online</option>
+          <option value="Pay in cash">Pay in Cash</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
